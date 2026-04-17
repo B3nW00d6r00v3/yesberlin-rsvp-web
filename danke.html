@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>YesBerlin — Du bist dabei!</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0A0A0A;
+    color: #CCC;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 30px 20px 6px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+    width: 100%;
+  }
+  .logo-yes  { font-size: 60px; font-family: Impact, Arial, sans-serif; color: #D4F53C; letter-spacing: -1px; }
+  .logo-ber  { font-size: 60px; font-family: Impact, Arial, sans-serif; color: #FAFAF8; letter-spacing: -1px; }
+  .logo-rsvp { display: block; font-size: 26px; font-family: Impact, Arial, sans-serif; color: #666; letter-spacing: 2px; margin-top: -4px; }
+
+  /* HERO CHECK */
+  .check {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+  .check-icon {
+    width: 72px;
+    height: 72px;
+    border: 3px solid #D4F53C;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .check-icon svg { width: 36px; height: 36px; }
+  .check h1 {
+    font-family: Impact, Arial, sans-serif;
+    font-size: 36px;
+    color: #FAFAF8;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  .check p {
+    font-size: 15px;
+    color: #999;
+    line-height: 1.6;
+  }
+
+  /* SECTIONS */
+  .section {
+    background: #111;
+    border-left: 4px solid #D4F53C;
+    padding: 20px;
+    margin: 8px 20px;
+    width: calc(100% - 40px);
+  }
+  .section-label {
+    font-family: Impact, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #D4F53C;
+    margin-bottom: 10px;
+  }
+  .section p {
+    font-size: 14px;
+    color: #CCC;
+    line-height: 1.65;
+  }
+  .section strong { color: #FAFAF8; }
+
+  /* EMAIL-TIPP Kasten */
+  .email-box {
+    background: #151515;
+    border: 1px solid #2a2a2a;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.6;
+  }
+  .email-box b { color: #D4F53C; }
+
+  /* PERSONALISIERUNG */
+  .section-pref {
+    background: #111;
+    border-left: 4px solid #555;
+    padding: 20px;
+    margin: 8px 20px;
+    width: calc(100% - 40px);
+  }
+  .section-pref .section-label { color: #888; }
+  .section-pref p { font-size: 14px; color: #888; line-height: 1.65; }
+
+  /* CTA */
+  .cta {
+    padding: 28px 20px 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .btn-lime {
+    display: inline-block;
+    background: #D4F53C;
+    color: #080808;
+    font-family: Impact, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+  .btn-ghost {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+  .btn-ghost:hover { color: #999; }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid #222;
+    padding: 16px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #444;
+  }
+  .footer a { color: #444; text-decoration: none; }
+  .footer a:hover { color: #888; }
+
+  @media (max-width: 480px) {
+    .logo-yes, .logo-ber { font-size: 44px; }
+    .logo-rsvp { font-size: 20px; }
+    .check h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <span class="logo-yes">YES</span><span class="logo-ber">BERLIN</span>
+  <span class="logo-rsvp">.RSVP</span>
+</header>
+
+<div class="container">
+
+  <!-- CHECK -->
+  <div class="check">
+    <div class="check-icon">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="6,18 14,26 30,10" stroke="#D4F53C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>DU BIST DABEI.</h1>
+    <p>Anmeldung bestätigt. Berlin wartet auf dich.</p>
+  </div>
+
+  <!-- ABSENDER HINZUFÜGEN -->
+  <div class="section">
+    <div class="section-label">SCHRITT 1 &nbsp;·&nbsp; ABSENDER SPEICHERN</div>
+    <p>
+      Damit unser Newsletter sicher in deinem Posteingang landet und nicht im Spam-Ordner,
+      füge <strong>newsletter@yesberlin.rsvp</strong> zu deinen Kontakten hinzu.
+    </p>
+    <div class="email-box">
+      <b>So geht's:</b> Öffne die soeben erhaltene Bestätigungsmail, klicke auf den Absendernamen
+      und wähle "Zu Kontakten hinzufügen" — das reicht bei den meisten E-Mail-Clients.
+    </div>
+  </div>
+
+  <!-- PERSONALISIERUNG -->
+  <div class="section">
+    <div class="section-label">SCHRITT 2 &nbsp;·&nbsp; DEIN NEWSLETTER</div>
+    <p>
+      Du bekommst jetzt <strong>alle Kategorien</strong> — von Techno bis Theater, von Kids bis Klassik.
+      Perfekt, wenn du offen für alles bist.<br><br>
+      Falls du lieber nur bestimmte Genres oder Themen sehen möchtest, kannst du das
+      jederzeit über den Link im Newsletter-Footer anpassen. Dauert 30 Sekunden.
+    </p>
+  </div>
+
+  <!-- WAS KOMMT WANN -->
+  <div class="section-pref">
+    <div class="section-label">WAS DICH ERWARTET</div>
+    <p>
+      Jeden <strong style="color:#CCC">Montag und Donnerstag</strong> kuratierte Events aus Berlin
+      in deinem Posteingang. Keine Werbung. Kein Algorithmus. Nur die Events, die wirklich zählen.
+    </p>
+  </div>
+
+</div><!-- /container -->
+
+<!-- CTA -->
+<div class="cta">
+  <a href="https://yesberlin.rsvp" class="btn-lime">YESBERLIN.RSVP BESUCHEN</a>
+  <a href="https://yesberlin.rsvp" class="btn-ghost">Zurück zur Startseite</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>© 2026 YesBerlin.rsvp</span>
+  <span>
+    <a href="https://yesglobal.rsvp/datenschutz.html">Datenschutz</a>
+    &nbsp;·&nbsp;
+    <a href="https://yesglobal.rsvp/impressum.html">Impressum</a>
+  </span>
+</footer>
+
+</body>
+</html>
